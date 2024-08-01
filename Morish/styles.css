@@ -1,0 +1,117 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Specific Page Styles */
+.intro {
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Style for the logo */
+.logo {
+    display: block;
+    max-width: 150px; /* Adjust size as needed */
+    height: auto;
+    margin: 0 auto;
+}
+
+/* Remove bullets from the list */
+.info-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.info-list li {
+    margin-bottom: 10px; /* Space between items */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+    
+    footer {
+        position: relative;
+        bottom: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 0.9em;
+    }
+
+    .logo {
+        max-width: 120px; /* Adjust size for smaller screens */
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    section {
+        padding: 15px;
+    }
+}
